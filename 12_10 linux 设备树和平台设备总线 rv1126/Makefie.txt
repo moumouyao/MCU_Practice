@@ -1,0 +1,11 @@
+#obj-m += mytest.o #模块的名字
+obj-m += mydevice.o mydriver.o #模块的名字
+KDIR:=/home/yyy/rv1126/rv1126_rv1109_v2.2.0_20210825/kernel #内核的位置
+
+
+all:
+	make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -C $(KDIR) M=$(PWD) modules
+	arm-linux-gnueabihf-gcc app.c -o app
+	rm -f  *.o *.mod.c *.symvers *.markers *.order
+clean:
+	rm -f *.ko *.o *.mod.c *.symvers *.markers *.order app
