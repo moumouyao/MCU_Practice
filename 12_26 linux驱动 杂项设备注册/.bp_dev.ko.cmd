@@ -1,0 +1,1 @@
+cmd_/home/yyy/linux/1lunxu_diver/nfs/bp_test/bp_dev.ko := arm-linux-ld -EL -r  -T /home/yyy/linux/1lunxu_diver/11_21/linux-3.5/scripts/module-common.lds --build-id  -o /home/yyy/linux/1lunxu_diver/nfs/bp_test/bp_dev.ko /home/yyy/linux/1lunxu_diver/nfs/bp_test/bp_dev.o /home/yyy/linux/1lunxu_diver/nfs/bp_test/bp_dev.mod.o
